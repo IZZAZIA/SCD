@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "BOOKT",
+    "slug": "bookt",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "edu.riphah.bookt"
+    },
+    "plugins": [
+      "expo-asset",
+      "expo-font"
+    ]
+  }
+}

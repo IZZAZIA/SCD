@@ -1,0 +1,195 @@
+{
+  "tables": {
+    "users": [
+      {
+        "id": 1,
+        "name": "Admin User",
+        "email": "admin@campus.edu",
+        "passwordHash": "e7b57b0bd9307e7e6156c194418d7e32:c8ef7671bfc9edbd1165f3b806afe87cf272e6631d8cad48dc3b06a294f0b1067aa5604bc7d1253b6d6adc2c933d1a14e002cdf289c3b5f19c2a476f24b18548",
+        "role": "admin",
+        "status": "active",
+        "createdAt": "2026-11-22T09:40:04.764Z"
+      },
+      {
+        "id": 2,
+        "name": "Olivia Organizer",
+        "email": "organizer@campus.edu",
+        "passwordHash": "f60a23a20acecc02ebb7e67e8c0cbe0f:cfa0c9c917a737e2e3c3af369812c9b7ce0003f38cf4d8dcbeffaaac4708050e155af4e1819eb8b34e950491df30590295a746cd7f4de1496b6da8ad72063b71",
+        "role": "organizer",
+        "status": "active",
+        "createdAt": "2026-11-22T09:40:04.802Z"
+      },
+      {
+        "id": 3,
+        "name": "Rami Resource Manager",
+        "email": "manager@campus.edu",
+        "passwordHash": "7cdcc4f9828c89bcdba4e998c4808d36:2a4c13bbb3cc0b3ec05655facb06baa4d6d577975fe0c1a1baa02b5859abb6fa2dcb0809508b36a98868f296dc607d4207604fe8434b0021058ec73ce4b1f45b",
+        "role": "resource_manager",
+        "status": "active",
+        "createdAt": "2026-11-22T09:40:04.836Z"
+      },
+      {
+        "id": 4,
+        "name": "Sana Student",
+        "email": "student@campus.edu",
+        "passwordHash": "1b8dd52e3a092da584a5162d97b915b0:94d130894b9e23c8a247bbce6aba26a7275a9ca9b5799a04ec8238de06021f1b0046cb19aab9763d5d7d28acf5bd2dda64be1eb3c09188de762dec672b67f330",
+        "role": "student",
+        "status": "active",
+        "createdAt": "2026-11-22T09:40:04.870Z"
+      },
+      {
+        "id": 5,
+        "name": "Anfal Faruqi",
+        "email": "anfalfaruqi@gmail.com",
+        "passwordHash": "f92bf7f65d15cf0765890f294e5faf81:f2b15f020c94e1bcdb8372c53c27666edfe6191c9bae4654103db6cdddc175053064bee2166429a831e843078511962d1594ac76e9a92699ea42552f951c5ce6",
+        "role": "student",
+        "status": "active",
+        "createdAt": "2026-11-22T10:31:28.932Z"
+      },
+      {
+        "id": 6,
+        "name": "System Admin",
+        "email": "admin123@campus.edu",
+        "username": "admin123",
+        "passwordHash": "3c2b1a7b60d918c034da63352746da37:6bda5ab31ff9a94762086bb8043e1a8b60ddd789acdf27f2e2a1aebd202e39d1db2906c34d571eccf7704275eb8908cfa695dcdde991f419eced33da6b6e37e9",
+        "role": "admin",
+        "status": "active",
+        "createdAt": "2026-11-22T11:02:07.027Z"
+      }
+    ],
+    "events": [
+      {
+        "id": 1,
+        "title": "AI in Healthcare Seminar",
+        "description": "AI in Healthcare Seminar organized by Computing Society.",
+        "type": "Seminar",
+        "society": "Computing Society",
+        "date": "2026-11-25",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "venue": "Main Auditorium",
+        "capacity": 200,
+        "organizerId": 2,
+        "status": "Scheduled",
+        "reminderSent": false,
+        "createdAt": "2026-11-22T09:40:04.879Z"
+      },
+      {
+        "id": 2,
+        "title": "Hackathon Kickoff",
+        "description": "Hackathon Kickoff organized by Software Engineering Society.",
+        "type": "Workshop",
+        "society": "Software Engineering Society",
+        "date": "2026-11-27",
+        "startTime": "09:00",
+        "endTime": "13:00",
+        "venue": "Computer Lab 1",
+        "capacity": 40,
+        "organizerId": 2,
+        "status": "Scheduled",
+        "reminderSent": false,
+        "createdAt": "2026-11-22T09:40:04.881Z"
+      },
+      {
+        "id": 3,
+        "title": "Inter-Department Cricket",
+        "description": "Inter-Department Cricket organized by Sports Society.",
+        "type": "Sports",
+        "society": "Sports Society",
+        "date": "2026-11-29",
+        "startTime": "14:00",
+        "endTime": "18:00",
+        "venue": "University Ground",
+        "capacity": 120,
+        "organizerId": 2,
+        "status": "Scheduled",
+        "reminderSent": false,
+        "createdAt": "2026-11-22T09:40:04.882Z"
+      },
+      {
+        "id": 4,
+        "title": "Food Tracking with AI",
+        "description": "",
+        "type": "Seminar",
+        "society": "Faculty of Computing ",
+        "date": "2026-11-25",
+        "startTime": "07:00",
+        "endTime": "09:30",
+        "venue": "B-14",
+        "capacity": 100,
+        "organizerId": 6,
+        "status": "Scheduled",
+        "reminderSent": false,
+        "createdAt": "2026-11-22T11:06:03.098Z"
+      }
+    ],
+    "resources": [
+      {
+        "id": 1,
+        "name": "Main Auditorium",
+        "type": "Hall",
+        "location": "Block A, Ground floor",
+        "capacity": 400,
+        "status": "available"
+      },
+      {
+        "id": 2,
+        "name": "Seminar Room 2",
+        "type": "Classroom",
+        "location": "Block B, Floor 2",
+        "capacity": 60,
+        "status": "available"
+      },
+      {
+        "id": 3,
+        "name": "Computer Lab 1",
+        "type": "Lab",
+        "location": "Block C, Floor 1",
+        "capacity": 40,
+        "status": "available"
+      },
+      {
+        "id": 4,
+        "name": "Portable Projector",
+        "type": "Equipment",
+        "location": "IT store",
+        "capacity": 0,
+        "status": "available"
+      },
+      {
+        "id": 5,
+        "name": "Sound System",
+        "type": "Equipment",
+        "location": "IT store",
+        "capacity": 0,
+        "status": "available"
+      }
+    ],
+    "bookings": [],
+    "registrations": [
+      {
+        "id": 1,
+        "eventId": 1,
+        "studentId": 5,
+        "registeredOn": "2026-11-22T10:32:19.532Z",
+        "attended": false
+      },
+      {
+        "id": 2,
+        "eventId": 4,
+        "studentId": 5,
+        "registeredOn": "2026-11-22T11:07:29.691Z",
+        "attended": false
+      }
+    ],
+    "notifications": []
+  },
+  "counters": {
+    "users": 6,
+    "events": 4,
+    "resources": 5,
+    "bookings": 0,
+    "registrations": 3,
+    "notifications": 0
+  }
+}
