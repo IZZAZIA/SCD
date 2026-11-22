@@ -1,0 +1,44 @@
+✔ FR-1: a student can register and then log in
+✔ FR-1: bad passwords, duplicate emails and weak passwords are refused
+✔ FR-3: admin can create, deactivate and delete users; deactivated users cannot log in
+✔ FR-2: each role only holds the permissions it needs
+✔ FR-10/13: a booking request starts as Pending and managers are notified
+✔ FR-11: overlapping bookings are rejected (Reject strategy)
+✔ FR-11: overlapping bookings only warn under the Warn strategy
+✔ FR-11: back-to-back bookings (end = next start) do not clash
+✔ FR-10: requesting several resources is all-or-nothing (transaction rollback)
+✔ FR-14/16: a manager approves with remarks and the organizer is notified
+✔ FR-14: rejecting needs remarks, and a decided request cannot change again (FR-13)
+✔ FR-14: two clashing pending requests cannot both be approved
+✔ FR-15: organizers track and cancel their own requests; others cannot see them
+✔ Organizers cannot book resources for someone else's event; unavailable resources are refused
+✔ FR-9: resource availability reflects approved bookings in real time
+✔ Reports: utilization counts approved hours and participation counts registrations
+✔ Repository/DB: a failed transaction rolls every change back
+✔ FR-4: an organizer creates an event; invalid data is refused
+✔ FR-5: only the owning organizer can edit an event
+✔ FR-6: students list upcoming events and filter by category
+✔ FR-18: rescheduling notifies registered students and releases booked resources
+✔ FR-18: cancelling an event notifies students and cancels its bookings
+✔ FR-17: reminders go to registered students once, inside the reminder window
+✔ Singleton: Database and EventBus always return the same instance
+✔ Factory: UserFactory builds the right role with the right permissions
+✔ Factory: user JSON never exposes the password hash
+✔ Factory: NotificationFactory writes the right message per type
+✔ Observer: subscribers are notified, can unsubscribe, and failures are isolated
+✔ Strategy: reject blocks overlaps, warn allows them with a warning
+✔ Strategy: EventFilter applies date, category and society filters together
+✔ FR-7: students register within capacity and are refused when the event is full
+✔ FR-7: duplicate registration is refused and unregistering frees a seat
+✔ FR-7: simultaneous sign-ups never exceed capacity (transaction)
+✔ Organizer sees attendees and records attendance; others cannot
+✔ passwords are stored as salted hashes and verify correctly
+✔ tokens verify, and tampered or expired tokens are rejected
+ℹ tests 36
+ℹ suites 0
+ℹ pass 36
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3122.206858
